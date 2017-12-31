@@ -3,7 +3,7 @@ package jp.wasabeef.blurry.internal;
 import android.graphics.Color;
 
 /**
- * Copyright (C) 2015 Wasabeef
+ * Copyright (C) 2017 Wasabeef
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +20,12 @@ import android.graphics.Color;
 
 public class BlurFactor {
 
-    public static final int DEFAULT_RADIUS = 25;
-    public static final int DEFAULT_SAMPLING = 1;
+  public static final int DEFAULT_RADIUS = 25;
+  public static final int DEFAULT_SAMPLING = 1;
 
-    public int width;
-    public int height;
-    public int radius = DEFAULT_RADIUS;
-    public int sampling = DEFAULT_SAMPLING;
-    public int color = Color.TRANSPARENT;
+  public int width;
+  public int height;
+  public int radius = DEFAULT_RADIUS;
+  public int sampling = DEFAULT_SAMPLING;
+  public int color = Color.TRANSPARENT;
 }

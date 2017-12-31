@@ -19,17 +19,7 @@ How do I use it?
 ##### Dependencies
 ```groovy
 dependencies {
-    compile 'jp.wasabeef:blurry:1.0.0'
-}
-```
-
-##### Enable Renderscript
-```groovy
-android {
-    defaultConfig {
-        renderscriptTargetApi 22
-        renderscriptSupportModeEnabled true
-    }
+    compile 'jp.wasabeef:blurry:2.1.1'
 }
 ```
 
@@ -43,9 +33,15 @@ Parent must be ViewGroup
 Blurry.with(context).radius(25).sampling(2).onto((ViewGroup) rootView);
 ```
 
-**Into**
+**Into**  
 ```java
+// from View
 Blurry.with(context).capture(view).into(imageView);
+```
+
+```java
+// from Bitmap 
+Blurry.with(context).from(bitmap).into(imageView);
 ```
 
 **Blur Options**
@@ -68,7 +64,7 @@ Blurry.with(context)
 
 Requirements
 --------------
-Android 2.3+
+Android 3.+
 
 Developed By
 -------
@@ -82,7 +78,7 @@ src="https://raw.githubusercontent.com/wasabeef/art/master/twitter.png" width="7
 License
 -------
 
-    Copyright 2015 Wasabeef
+    Copyright 2017 Wasabeef
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
